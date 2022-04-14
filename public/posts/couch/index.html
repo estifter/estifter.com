@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>How I built my couch from scratch | Ed Stifter</title>
+<meta name="keywords" content="">
+<meta name="description" content="My couch is one of my favorite projects. I built it almost completely from scratch. I&rsquo;m not sure if that has ever been done before, but when I was researching during the design phase I couldn&rsquo;t find much information about couch construction.
+If anyone else finds this, let it be known that there are a lot of things I would do differently in v2. see the end of this post for more on that">
+<meta name="author" content="">
+<link rel="canonical" href="http://estifter.com/posts/couch/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.f00f189851525f5dc525fa12dfc10fa3656c6cc16f26285e5f7347522031587e.css" integrity="sha256-8A8YmFFSX13FJfoS38EPo2VsbMFvJiheX3NHUiAxWH4=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.27cd435cc9ed6abb4b496581b151804f79f366c412620272bb94e2f5f598ebcc.js" integrity="sha256-J81DXMntartLSWWBsVGAT3nzZsQSYgJyu5Ti9fWY68w="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://estifter.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://estifter.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://estifter.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://estifter.com/apple-touch-icon.png">
+<link rel="mask-icon" href="http://estifter.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="How I built my couch from scratch" />
+<meta property="og:description" content="My couch is one of my favorite projects. I built it almost completely from scratch. I&rsquo;m not sure if that has ever been done before, but when I was researching during the design phase I couldn&rsquo;t find much information about couch construction.
+If anyone else finds this, let it be known that there are a lot of things I would do differently in v2. see the end of this post for more on that" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://estifter.com/posts/couch/" /><meta property="og:image" content="http://estifter.com/posts/couch/cushion_with_cover.jpg"/><meta property="article:section" content="posts" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://estifter.com/posts/couch/cushion_with_cover.jpg"/>
+<meta name="twitter:title" content="How I built my couch from scratch"/>
+<meta name="twitter:description" content="My couch is one of my favorite projects. I built it almost completely from scratch. I&rsquo;m not sure if that has ever been done before, but when I was researching during the design phase I couldn&rsquo;t find much information about couch construction.
+If anyone else finds this, let it be known that there are a lot of things I would do differently in v2. see the end of this post for more on that"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "How I built my couch from scratch",
+      "item": "http://estifter.com/posts/couch/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How I built my couch from scratch",
+  "name": "How I built my couch from scratch",
+  "description": "My couch is one of my favorite projects. I built it almost completely from scratch. I\u0026rsquo;m not sure if that has ever been done before, but when I was researching during the design phase I couldn\u0026rsquo;t find much information about couch construction.\nIf anyone else finds this, let it be known that there are a lot of things I would do differently in v2. see the end of this post for more on that",
+  "keywords": [
+    
+  ],
+  "articleBody": "My couch is one of my favorite projects. I built it almost completely from scratch. I’m not sure if that has ever been done before, but when I was researching during the design phase I couldn’t find much information about couch construction.\nIf anyone else finds this, let it be known that there are a lot of things I would do differently in v2. see the end of this post for more on that\nLet’s get into it. I tried to take pictures during the build process, but it has been over a year now so there might be some gaps. I’ll do my best to detail the steps.\nThe problem I am (as of 2021) in college, and I am required by Notre Dame to live in a dorm for 3 years. Dorms are small. Couches are big. Inevitably, one of those two things has to give. In my experience, it is usually the couch size. Dorm futons/couches are tiny, fragile, and uncomfortable. After having one of said tiny/fragile/uncomfortable couches during my freshman year, I decided to make a change for my next year.\nAnyone who knows me knows that I don’t back down from a good challenge, and let me tell you: finding a couch that is small and light enough to move into a dorm, strong enough to withstand the shenanigans in dorms, and comfortable enough to be worth sitting on is a huge challenge. This led me to one obvious conclusion: I should just build it myself.\nThe design I listed my requirements for the design above. Next it was time to actually turn those ideas into something physical.\nMy idea to tackle the problem of comfort was very straightforward - use good quality foam. The foam used in all of those uncomfortable futons is cheap and thin, which leads to it breaking and wearing out very quickly. I ordered 5” (bottom) and 4” (top) thick closed cell foam directly from a foam supplier and cut it to size. (See the notes at the bottom for why the back and bottom were different foam.)\nThe next simplest issue to tackle was strength. My freshman year couch broke several times when too many people sat on it or if someone stood on it incorrectly or any number of other reasons. It was cheap to buy and cheaply made, and it showed. The solution to this falls out from needing to use wood for other reasons that I’ll address later: 2-by wood is strong. Plenty strong for a couch. 2x6’s are used to support floors and decks - a few of them in a couch with much smaller spans than often seen in construction would be plenty to support 6 or so people on a couch.\nThe final (and most difficult) challenge was making the thing portable. Wood is heavy. There is no way around that. It is also cheap and easy to work with. There is no way around that. With wood locked in as the material choice, I had to look at different options for reducing weight and increasing maneuverability. What I landed on was a modular design. I would construct several sections of the couch which were easily disassemble-able. This would allow me to disassemble and reassemble the couch to move it.\nI decided to break it up into the cross-members (think the wide pieces that span the length of the couch) and the support pieces. I decided to break the support pieces into 6 individual boxes that could be individually placed into the frame. This allowed them to be removed and stacked for easy movement and storage. (pictures later)\nGetting materials Like I said, there aren’t many couch design resources out there. After looking at the couches in my house and finding a few videos online about couch construction, I had a basic idea of the construction.\nEach couch basically consisted of a wooden frame, spring support system, and cushions. The wood I could just get from Home Depot, cushion foam and fabric from online, and springs from online. I’ll include links to the sites I used to buy at the bottom. There were additional small things required - for instance the Velcro for the cushion covers, spring clips for the supports, and screws/nails for the frame, but they weren’t a consideration in my initial design because they are just details.\nThe build I began building it sometime around the end of June, and I was heading back to school in early August. That left me about a month to complete the entire couch after work every day. (which turned out to be a few hours a day when I had daylight)\nCrossmembers I began with the cross-members. I used 2x6s with strip of 1x2 screwed onto one side. This 1x2 would serve as a ledge for the support sections to sit on top of. I notched out the ends of each of the boards so that when the frame was assembled, the pieces would fit together without a simple butt joint. I was careful to make the top notch on the boards that would span the width of the couch because that way the weight of the people would push down into the floor supports at either end.\nI also drilled holes in the boards at the notches and inserted bolts that I would use as anchor points to connect the side and front/back pieces to each other. These bolts are not structural (in theory) and served only to hold the sections together, so setting a bolt into the hole with construction adhesive would be plenty strong. I simply placed 2 nuts at the end of the threaded rod and tightened them together (a jam-nut) and then hammered the rod into the hole I had bored. The nuts helped to prevent the bolt from just spinning in the hole when I tightened a nut on the other end, because their hexagonal edges dig into the wood.\nIn total, there are 8 cross-members - 2 long for the bottom, 2 long for the top, and 2 short for each of the sides on the bottom and the top. Each was constructed the same way.\nFloor Supports The next things to construct were the floor supports. This was perhaps the most complicated part of the woodworking in the project.\nI had a few goals in mind. I didn’t want arms on the couch - they would not only be difficult to construct, they would limit how many people could sit (by removing the ends of the couch) and make it uncomfortable to lay on. (for me - I’m relatively tall)\nI settled on a design that would support both the back supports and the bottom supports without any hardware, provide an adequate angle for the back support, and that would not look terrible. It was connected with either only glue or with pocket screws and glue, depending on how hard it would be to clamp things in place.\nThe crossmembers didn’t require any hardware to fit into these floor supports (kind of, see below), so assembly and disassembly of the couch would be simple. They fit into rails and were held together like puzzle pieces.\nSpring Boxes The spring boxes were next. These are really the main part of the couch - they provide support for the cushions. As mentioned earlier, I built these as modular sections, so each cushion got a support section.\nThey were constructed out of 3/4” plywood which was simply butt-joined at the corners using glue and a nail gun. The corners were reinforced using triangular pieces of 1/2” OSB that I had laying around. I used another strip of plywood in the center of the box along the axis that the springs were tensioned. This helped prevent bowing in the middle of the sides of the box.\nThe boxes were then fitted with the springs. There were a few considerations here when building: the springs for the back support should be looser than the ones for the bottom support, and the springs must be connected laterally somehow.\nI used 8-gauge springs for the bottom and 10-gauge springs for the back. The process for attaching them is pretty straightforward - lay out the spring clips (I went with 6” apart) and then pull the springs as tight as you can get them.\nThere is a step missing here if you haven’t noticed - cutting the springs to length. This was a bit of a challenge for me because for some reason I couldn’t find a good pair of bolt cutters. They would’ve made the job a lot easier. Instead, I had to use an angle grinder with a cutoff wheel to cut each spring to length. As you can imagine, cutting about 36 springs down to length gets tedious quickly, so that’ll go on the list of things I’d change at the bottom of this post.\nAfter the springs were in place, it was time to add lateral stability. In commercial couches this is done by tying the springs together with a steel wire. I didn’t want to spend the money on tons of steel wire because I was only building one couch. As such, I decided to tie my springs together with nylon string. I tied each spring together in 5 places, and I made sure to tie them as tight as possible. The end goal is a sort of grid structure, where one axis is springs, and the other is string. If done properly, the springs shouldn’t be able to twist at all, and if you apply pressure in the middle each spring should take some of the weight.\nThe final step on the cushion supports was to cover the springs with something. I chose a canvas-like material for its strength. The only purpose of the covering is to prevent the cushions from directly touching the springs of the couch, which could lead to tears in the fabric. In my case, a little bit of surface rust developed on the springs. Without the canvas layer, that rust could’ve gotten on the cushions and stained them.\nCushions The cushions were the final part of the construction. I opted to make these from scratch - despite cushions being commercially available - for a few reasons. The first step was to cut the foam to size. It was shipped to me in long sheets which I had to cut down into three pieces. I used a serrated bread knife to cut the foam.\nOnce the cushions were cut to size, I used spray adhesive to bind another foam-like material called fiberfill that doesn’t provide support but is used to help the cushion ‘fill’ the cover. Without it, the cover would be loose on the cushion and would not only look bad - it could also allow the cover to slide around and tear.\nWith the cushion cut and fiber-ed, it was time to make the cushion covers. I again decided to sew these from scratch.\nI bought 10 square yards of fabric and cut it down to size to sew covers for all six of the cushions. Sewing cushion covers was perhaps the best documented of any of the tasks that the couch required, so after a few YouTube videos, I felt confident enough to give it a go myself.\nTo give a high-level overview, each cover involved cutting 9 pieces: 2 large square pieces for the top and bottom, 3 pieces for the sides, and then the last side is split in half to allow for a place to slide the cushion into the cover.\nI first sewed Velcro strips onto the half-sides for the opening. After the Velcro was in place, I sewed the 4 sides into a box. The last step was then sewing the top and bottom to that box. After that, the cushion was complete! I shoved the cushions into the covers and closed them up, and the couch was mostly done.\nFinishing touches I added a thick coat of oil-based polyurethane onto any outward facing wood. I wanted the surface to be glossy to prevent any spilled liquids soaking into the wood.\nConclusion Assembling the couch after all these steps was simple. The cushion supports sit into the frame made by the crossmembers. The frames made by the crossmembers then sit right into the floor supports. That’s it. Couch done. kind of…\nI added a cover to the cushion for reasons which will be listed below.\n Things I would change for next time   Don’t make the spring sections modular   Since there is no string tying together springs at the edges of each box, there is a tendency to “sink” into the couch near those edges. It isn’t the end of the world, but it bugs me.\n  In practice, it’s rare that I take it apart so far as to remove the spring boxes. It is still very easy to move just the bottom and back frames, and leaving the boxes in place allowed me to screw them all into the crossmembers which significantly increases stability of the entire couch. It used to feel much more fragile before screwing the boxes together\n  Poor tolerances on the box construction led to the bolts on the crossmembers eventually backing out of their holes, so I had to screw the crossmembers together as well. The boxes were about 1/2” too wide, and the force from wrenching down on the bolts eventually pushed them out of the wood.\n  Conclusion Instead of creating spring boxes, I would secure the springs directly to the frame. The spring clips would be screwed into the 2x6” crossmembers so that they are vertical.\nThis solves a few problems. Namely, the cushions don’t sit flat on the couch because the springs are bowed upward. This bowing is mostly unavoidable. Putting the clips on the crossmembers down an inch or two from the edge would give the springs some room to bow out without the cushions being impacted.\nThis would additionally remove the need for the cushion cover, which right now serves to keep the cushions from falling off the couch when people sit. The reason the cushions move at all is because they don’t sit flat.\nAnother benefit of attaching springs directly to the frame is strength. Springs anchored in 2x6\"s will be much sturdier than the ones set in 3/4” plywood.\nThe frame could also then be joined differently because the crossmembers would no longer need to come apart. This would remove the need for notches in the floor supports to accommodate the bolts sticking out and would make the entire thing much prettier.\n  Closed bottom The spring sections do not have closed bottoms. The result of this is that someone standing on the couch could potentially put all of their weight into one or two springs and rip them right out of the wood.\nThe other issue a bottom would (somewhat) prevent is the sinking in. A bottom would force the cushion to stop sinking at a certain depth, and even though this might put more strain on the cushions from being compressed by a flat surface instead of supported by a spring, the effects would likely be negligible.\nConclusion Put a bottom on the frame. 1/2” plywood would probably be sufficient.\n  My notes about couch building techniques and alternative methods coming shortly… ",
+  "wordCount" : "2558",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://estifter.com/posts/couch/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ed Stifter",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://estifter.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://estifter.com/" accesskey="h" title="Ed Stifter (Alt + H)">Ed Stifter</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://estifter.com/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://estifter.com/resume/" title="Resume">
+                    <span>Resume</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://estifter.com/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      How I built my couch from scratch
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><p><img loading="lazy" src="couch_today.jpg" alt="An image of my completed couch"  />
+</p>
+<p>My couch is one of my favorite projects. I built it almost completely from
+scratch. I&rsquo;m not sure if that has ever been done before, but when I was
+researching during the design phase I couldn&rsquo;t find much information about couch
+construction.</p>
+<p>If anyone else finds this, let it be known that there are a lot of things I
+would do differently in v2. <strong><em>see the end of this post for more on that</em></strong></p>
+<p>Let&rsquo;s get into it. I tried to take pictures during the build process,
+but it has been over a year now so there might be some gaps. I&rsquo;ll do my best to
+detail the steps.</p>
+<h2 id="the-problem">The problem<a hidden class="anchor" aria-hidden="true" href="#the-problem">#</a></h2>
+<p>I am (as of 2021) in college, and I am required by Notre Dame to live in a dorm
+for 3 years. Dorms are small. Couches are big. Inevitably, one of those two things has
+to give. In my experience, it is usually the couch size. Dorm futons/couches are
+tiny, fragile, and uncomfortable. After having one of said tiny/fragile/uncomfortable
+couches during my freshman year, I decided to make a
+change for my next year.</p>
+<p>Anyone who knows me knows that I don&rsquo;t back down from a good challenge, and let me
+tell you: finding a couch that is small and light enough to move into a dorm, strong
+enough to withstand the shenanigans in dorms, and comfortable enough to be worth
+sitting on is a huge challenge. This led me to one obvious conclusion: I should just
+build it myself.</p>
+<h2 id="the-design">The design<a hidden class="anchor" aria-hidden="true" href="#the-design">#</a></h2>
+<p>I listed my requirements for the design above. Next it was time to actually turn
+those ideas into something physical.</p>
+<p>My idea to tackle the problem of comfort was very straightforward - use good
+quality foam. The foam used in all of those uncomfortable futons is cheap and thin,
+which leads to it breaking and wearing out very quickly. I ordered 5&rdquo; (bottom) and
+4&rdquo; (top) thick closed cell foam directly from a foam supplier and cut it to size.
+(See the notes at the bottom for why the back and bottom were different foam.)</p>
+<p>The next simplest issue to tackle was strength. My freshman year couch broke several
+times when too many people sat on it or if someone stood on it incorrectly or any
+number of other reasons. It was cheap to buy and cheaply made, and it showed. The
+solution to this falls out from needing to use wood for other reasons that I&rsquo;ll
+address later: 2-by wood is strong. Plenty strong for a couch. 2x6&rsquo;s are used to
+support floors and decks - a few of them in a couch with much smaller spans than
+often seen in construction would be plenty to support 6 or so people on a couch.</p>
+<p>The final (and most difficult) challenge was making the thing portable. Wood is
+heavy. There is no way around that. It is also cheap and easy to work with. There is
+no way around that. With wood locked in as the material choice, I had to look at
+different options for reducing weight and increasing maneuverability. What I landed
+on was a modular design. I would construct several sections of the couch which were
+easily disassemble-able. This would allow me to disassemble and reassemble the couch
+to move it.</p>
+<p>I decided to break it up into the cross-members (think the wide pieces that span the
+length of the couch) and the support pieces. I decided to break the support pieces
+into 6 individual boxes that could be individually placed into the frame. This
+allowed them to be removed and stacked for easy movement and storage. (pictures
+later)</p>
+<h2 id="getting-materials">Getting materials<a hidden class="anchor" aria-hidden="true" href="#getting-materials">#</a></h2>
+<p>Like I said, there aren&rsquo;t many couch design resources out there. After looking at
+the couches in my house and finding a few videos online about couch construction, I
+had a basic idea of the construction.</p>
+<p>Each couch basically consisted of a wooden frame, spring support system, and
+cushions. The wood I could just get from Home Depot, cushion foam and fabric from
+online, and springs from online. I&rsquo;ll include links to the sites I used to buy at
+the bottom. There were additional small things required - for instance the Velcro for
+the cushion covers, spring clips for the supports, and screws/nails for the frame,
+but they weren&rsquo;t a consideration in my initial design because they are just details.</p>
+<p><img loading="lazy" src="springs_in_garage.jpg" alt="Two rolls of couch springs"  />
+</p>
+<h2 id="the-build">The build<a hidden class="anchor" aria-hidden="true" href="#the-build">#</a></h2>
+<p>I began building it sometime around the end of June, and I was heading back to
+school in early August. That left me about a month to complete the entire couch
+after work every day. (which turned out to be a few hours a day when I had
+daylight)</p>
+<h3 id="crossmembers">Crossmembers<a hidden class="anchor" aria-hidden="true" href="#crossmembers">#</a></h3>
+<p>I began with the cross-members. I used 2x6s with strip of 1x2 screwed onto one side.
+This 1x2 would serve as a ledge for the support sections to sit on top of. I notched
+out the ends of each of the boards so that when the frame was assembled, the pieces
+would fit together without a simple butt joint. I was careful to make the top notch
+on the boards that would span the width of the couch because that way the weight of
+the people would push down into the floor supports at either end.</p>
+<p>I also drilled holes in the boards at the notches and inserted bolts that I would
+use as anchor points to connect the side and front/back pieces to each other. These
+bolts are not structural (in theory) and served only to hold the sections together,
+so setting a bolt into the hole with construction adhesive would be plenty strong. I
+simply placed 2 nuts at the end of the threaded rod and tightened them together (a
+jam-nut) and then hammered the rod into the hole I had bored. The nuts helped to
+prevent the bolt from just spinning in the hole when I tightened a nut on the other
+end, because their hexagonal edges dig into the wood.</p>
+<p><img loading="lazy" src="bolts_on_crossmembers.jpg" alt="The bolts set into the crossmember"  />
+</p>
+<p>In total, there are 8 cross-members - 2 long for the bottom, 2 long for the top, and
+2 short for each of the sides on the bottom and the top. Each was constructed the
+same way.</p>
+<h3 id="floor-supports">Floor Supports<a hidden class="anchor" aria-hidden="true" href="#floor-supports">#</a></h3>
+<p>The next things to construct were the floor supports. This was perhaps the most
+complicated part of the woodworking in the project.</p>
+<p>I had a few goals in mind. I didn&rsquo;t want arms on the couch - they would not only
+be difficult to construct, they would limit how many people could sit (by
+removing the ends of the couch) and make it uncomfortable to lay on. (for me -
+I&rsquo;m relatively tall)</p>
+<p>I settled on a design that would support both the back supports and the bottom
+supports without any hardware, provide an adequate angle for the back support,
+and that would not look terrible. It was connected with either only glue or with
+pocket screws and glue, depending on how hard it would be to clamp things in
+place.</p>
+<p><img loading="lazy" src="poly_on_floor_supports.jpg" alt="The floor supports constructed (and a little bit of poly applied)"  />
+</p>
+<p>The crossmembers didn&rsquo;t require any hardware to fit into these floor supports
+<em>(kind of, see below)</em>, so assembly and disassembly of the couch would be
+simple. They fit into rails and were held together like puzzle pieces.</p>
+<h3 id="spring-boxes">Spring Boxes<a hidden class="anchor" aria-hidden="true" href="#spring-boxes">#</a></h3>
+<p>The spring boxes were next. These are really the main part of the couch - they
+provide support for the cushions. As mentioned earlier, I built these as modular
+sections, so each cushion got a support section.</p>
+<p>They were constructed out of 3/4&rdquo; plywood which was simply butt-joined at the
+corners using glue and a nail gun. The corners were reinforced using triangular
+pieces of 1/2&rdquo; OSB that I had laying around. I used another strip of plywood in
+the center of the box along the axis that the springs were tensioned. This
+helped prevent bowing in the middle of the sides of the box.</p>
+<p>The boxes were then fitted with the springs. There were a few considerations
+here when building: the springs for the back support should be looser than the
+ones for the bottom support, and the springs must be connected laterally
+somehow.</p>
+<p>I used 8-gauge springs for the bottom and 10-gauge springs for the back. The
+process for attaching them is pretty straightforward - lay out the spring clips
+(I went with 6&rdquo; apart) and then pull the springs as tight as you can get them.</p>
+<p>There is a step missing here if you haven&rsquo;t noticed - cutting the springs to
+length. This was a bit of a challenge for me because for some reason I couldn’t
+find a good pair of bolt cutters. They would&rsquo;ve made the job a lot easier.
+Instead, I had to use an angle grinder with a cutoff wheel to cut each spring to
+length. As you can imagine, cutting about 36 springs down to length gets tedious
+quickly, so that&rsquo;ll go on the list of things I&rsquo;d change at the bottom of this
+post.</p>
+<p>After the springs were in place, it was time to add lateral stability. In
+commercial couches this is done by tying the springs together with a steel wire.
+I didn&rsquo;t want to spend the money on tons of steel wire because I was only
+building one couch. As such, I decided to tie my springs together with nylon
+string. I tied each spring together in 5 places, and I made sure to tie them as
+tight as possible. The end goal is a sort of grid structure, where one axis is
+springs, and the other is string. If done properly, the springs shouldn&rsquo;t be
+able to twist at all, and if you apply pressure in the middle each spring should
+take some of the weight.</p>
+<p><img loading="lazy" src="box_supports.jpg" alt="All constructed box supports"  />
+</p>
+<p>The final step on the cushion supports was to cover the springs with something.
+I chose a canvas-like material for its strength. The only purpose of the
+covering is to prevent the cushions from directly touching the springs of the
+couch, which could lead to tears in the fabric. In my case, a little bit of
+surface rust developed on the springs. Without the canvas layer, that rust
+could&rsquo;ve gotten on the cushions and stained them.</p>
+<p><img loading="lazy" src="canvas_on_box.jpg" alt="Box supports with canvas covering"  />
+</p>
+<p><img loading="lazy" src="constructed_bottom_frame.jpg" alt="Box supports in frame"  />
+</p>
+<h3 id="cushions">Cushions<a hidden class="anchor" aria-hidden="true" href="#cushions">#</a></h3>
+<p>The cushions were the final part of the construction. I opted to make these from
+scratch - despite cushions being commercially available - for a few reasons. The
+first step was to cut the foam to size. It was shipped to me in long sheets
+which I had to cut down into three pieces. I used a serrated bread knife to cut
+the foam.</p>
+<p><img loading="lazy" src="foam_in_room.jpg" alt="Uncut foam"  />
+
+<img loading="lazy" src="cutting_foam.jpg" alt="In process of cutting foam"  />
+</p>
+<p>Once the cushions were cut to size, I used spray adhesive to bind another
+foam-like material called fiberfill that doesn&rsquo;t provide support but is used to
+help the cushion &lsquo;fill&rsquo; the cover. Without it, the cover would be loose on the
+cushion and would not only look bad - it could also allow the cover to slide
+around and tear.</p>
+<p><img loading="lazy" src="fiber_on_fom.jpg" alt="Fiberfill applied to cushions"  />
+</p>
+<p>With the cushion cut and fiber-ed, it was time to make the cushion covers. I
+again decided to sew these from scratch.</p>
+<p>I bought 10 square yards of fabric and cut it down to size to sew covers for all
+six of the cushions. Sewing cushion covers was perhaps the best documented of
+any of the tasks that the couch required, so after a few YouTube videos, I felt
+confident enough to give it a go myself.</p>
+<p>To give a high-level overview, each cover involved cutting 9 pieces: 2 large
+square pieces for the top and bottom, 3 pieces for the sides, and then the last
+side is split in half to allow for a place to slide the cushion into the cover.</p>
+<p><img loading="lazy" src="cutting_fabric.jpg" alt="The cuts drawn on fabric"  />
+</p>
+<p>I first sewed Velcro strips onto the half-sides for the opening. After the
+Velcro was in place, I sewed the 4 sides into a box. The last step was then
+sewing the top and bottom to that box. After that, the cushion was complete! I
+shoved the cushions into the covers and closed them up, and the couch was mostly
+done.</p>
+<p><img loading="lazy" src="multiple_covered_cushions.jpg" alt="The cushions with their covers on"  />
+</p>
+<h3 id="finishing-touches">Finishing touches<a hidden class="anchor" aria-hidden="true" href="#finishing-touches">#</a></h3>
+<p>I added a thick coat of oil-based polyurethane onto any outward facing wood. I
+wanted the surface to be glossy to prevent any spilled liquids soaking into the
+wood.</p>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>Assembling the couch after all these steps was simple. The cushion supports sit
+into the frame made by the crossmembers. The frames made by the crossmembers
+then sit right into the floor supports. That&rsquo;s it. Couch done. <em>kind of&hellip;</em></p>
+<p><img loading="lazy" src="completed_couch.jpg" alt="An image of my completed couch"  />
+</p>
+<p>I added a cover to the cushion for reasons which will be listed below.</p>
+<p><img loading="lazy" src="couch_today.jpg" alt="Couch with cover"  />
+</p>
+<hr>
+<h2 id="things-i-would-change-for-next-time">Things I would change for next time<a hidden class="anchor" aria-hidden="true" href="#things-i-would-change-for-next-time">#</a></h2>
+<ol>
+<li>
+<h4 id="dont-make-the-spring-sections-modular">Don&rsquo;t make the spring sections modular<a hidden class="anchor" aria-hidden="true" href="#dont-make-the-spring-sections-modular">#</a></h4>
+<ul>
+<li>
+<p>Since there is no string tying together springs at the edges of each box,
+there is a tendency to &ldquo;sink&rdquo; into the couch near those edges. It isn&rsquo;t the
+end of the world, but it bugs me.</p>
+</li>
+<li>
+<p>In practice, it&rsquo;s rare that I take it apart so far as to remove the spring
+boxes. It is still very easy to move just the bottom and back frames, and
+leaving the boxes in place allowed me to screw them all into the
+crossmembers which
+<em>significantly</em> increases stability of the entire couch. It used to feel much
+more fragile before screwing the boxes together</p>
+</li>
+<li>
+<p>Poor tolerances on the box construction led to the bolts on the crossmembers
+eventually backing out of their holes, so I had to screw the crossmembers
+together as well. The boxes were about 1/2&rdquo; too wide, and the force from
+wrenching down on the bolts eventually pushed them out of the wood.</p>
+</li>
+</ul>
+<h4 id="conclusion-1">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion-1">#</a></h4>
+<p>Instead of creating spring boxes, I would secure the springs directly to the frame.
+The spring clips would be screwed into the 2x6&rdquo; crossmembers so that they are
+vertical.</p>
+<p>This solves a few problems. Namely, the cushions don&rsquo;t sit flat on the couch
+because the springs are bowed upward. This bowing is mostly unavoidable.
+Putting the clips on the crossmembers down an inch or two from the edge would
+give the springs some room to bow out without the cushions being impacted.</p>
+<p>This would additionally remove the need for the cushion cover, which right now
+serves to keep the cushions from falling off the couch when people sit. The
+reason the cushions move at all is because they don&rsquo;t sit flat.</p>
+<p>Another benefit of attaching springs directly to the frame is strength. Springs
+anchored in 2x6&quot;s will be <strong>much</strong> sturdier than the ones set in 3/4&rdquo; plywood.</p>
+<p>The frame could also then be joined differently because the crossmembers
+would no longer need to come apart. This would remove the need for notches in
+the floor supports to accommodate the bolts sticking out and would make the
+entire thing much prettier.</p>
+</li>
+<li>
+<h4 id="closed-bottom">Closed bottom<a hidden class="anchor" aria-hidden="true" href="#closed-bottom">#</a></h4>
+<p>The spring sections do not have closed bottoms. The result of this is that someone
+standing on the couch could potentially put all of their weight into one or two
+springs and rip them right out of the wood.</p>
+<p>The other issue a bottom would (somewhat) prevent is the sinking in. A bottom would
+force the cushion to stop sinking at a certain depth, and even though this might put
+more strain on the cushions from being compressed by a flat surface instead of
+supported by a spring, the effects would likely be negligible.</p>
+<h4 id="conclusion-2">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion-2">#</a></h4>
+<p>Put a bottom on the frame. 1/2&rdquo; plywood would probably be sufficient.</p>
+</li>
+</ol>
+<h3 id="my-notes-about-couch-building-techniques-and-alternative-methods-coming-shortly">My notes about couch building techniques and alternative methods coming shortly&hellip;<a hidden class="anchor" aria-hidden="true" href="#my-notes-about-couch-building-techniques-and-alternative-methods-coming-shortly">#</a></h3>
+
+
+  </div>
+
+  <footer class="post-footer">
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="http://estifter.com/">Ed Stifter</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

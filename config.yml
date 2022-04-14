@@ -1,0 +1,31 @@
+baseURL: http://estifter.com/
+languageCode: en-us
+title: Ed Stifter
+
+theme: PaperMod
+
+menu:
+    main:
+        - name:     About
+          url:      about/
+          weight:   1
+        - name:     Resume
+          url:      resume/
+          weight:   10
+        - name:     Posts
+          url:      posts/
+          weight:   100
+
+params:
+    homeInfoParams:
+        Title: Hi.
+        Content: I don't post much, but when I do it's (hopefully) interesting. 
+
+    socialIcons:
+        - name: github
+          url:  "https://github.com/estifter"
+        - name: linkedin
+          url:  "https://www.linkedin.com/in/estifter/"
+        - name: email
+          url:  "mailto:edstifter@gmail.com"    
+
